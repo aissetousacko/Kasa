@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React /* , { useEffect, useState } */ from 'react'
 import Banner from '../components/Banner'
 import Card from '../components/Card'
 
-const Home = () => {
-  const [data, setData] = useState([])
+const Home = ({ data }) => {
+  /* const [data, setData] = useState([])
 
   useEffect(() => {
     fetch(`./data.json`, {
@@ -14,7 +14,7 @@ const Home = () => {
     })
       .then((response) => response.json())
       .then((data) => setData(data))
-  }, [])
+  }, []) */
 
   return (
     <div>
