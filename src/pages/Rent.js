@@ -1,6 +1,8 @@
 import React /* , { useState, useEffect } */ from 'react'
 import { useParams } from 'react-router-dom'
 import Slider from '../components/Slider'
+import Stars from '../components/Stars'
+import Tags from '../components/Tags'
 
 const Rent = ({ data }) => {
   const rentId = useParams()
@@ -65,8 +67,10 @@ const Rent = ({ data }) => {
       </div>
 
       <div className="rental__tags-stars">
-        <h1>TAG</h1>
-        <h1>RATINGS</h1>
+        <div className="tags-container">
+          <Tags tags={accomodation.tags} />
+        </div>
+        <Stars ratings={accomodation.rating} />
       </div>
 
       <div className="rental__description">
