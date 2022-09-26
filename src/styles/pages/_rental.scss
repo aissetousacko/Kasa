@@ -11,6 +11,8 @@
   }
 
   &__title {
+    margin-top: 20px;
+
     &--first {
       font-size: 36px;
     }
@@ -23,6 +25,8 @@
   &__host {
     display: flex;
     align-items: center;
+    margin-top: 20px;
+
     p {
       font-size: 18px;
       text-align: end;
@@ -39,14 +43,13 @@
   &__tags-stars {
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
   }
 
   &__description {
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 25px;
     margin-bottom: 10px;
   }
 }
