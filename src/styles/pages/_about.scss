@@ -2,5 +2,14 @@
   margin-left: 100px;
   margin-right: 100px;
   color: $color-primary;
-  /* width: 100%; */
+}
+@media screen and (max-width: 600px) {
+  .about {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    &-container {
+      margin-bottom: 168px;
+    }
+  }
 }

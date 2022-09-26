@@ -2,4 +2,23 @@
   width: 30px;
   height: 30px;
   margin-left: 10px;
+
+  &-container {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .star {
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+
+    &-container {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
 }

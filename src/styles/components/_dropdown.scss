@@ -37,3 +37,10 @@
     border-radius: 10px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .dropdown {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

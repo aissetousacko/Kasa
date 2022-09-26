@@ -6,11 +6,19 @@
   background-color: $color-primary;
   font-size: 14px;
   border-radius: 15px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 10px 40px;
   margin-right: 10px;
 
   &-container {
     display: flex;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tags {
+    padding: 5px 20px;
+    font-size: 10px;
+    border-radius: 10px;
   }
 }

@@ -38,3 +38,28 @@
     font-size: 24px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .slider {
+    .picture {
+      height: 255px;
+    }
+
+    &__arrow {
+      width: 20px;
+      height: 35px;
+
+      &--left {
+        top: 15%;
+      }
+
+      &--right {
+        top: 15%;
+      }
+    }
+
+    &__counter {
+      display: none;
+    }
+  }
+}

@@ -5,7 +5,7 @@ import Dropdown from '../components/Dropdown'
 
 const About = () => {
   return (
-    <div>
+    <div className="about-container">
       <Banner image={BannerAboutImage} text={false} />
       <div className="about">
         <Dropdown

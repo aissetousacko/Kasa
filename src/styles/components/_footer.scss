@@ -17,3 +17,11 @@
     font-size: 20px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .footer {
+    &__text {
+      font-size: 12px;
+    }
+  }
+}
