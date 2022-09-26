@@ -1,6 +1,16 @@
 .dropdown {
-  width: 40%;
   /* position: relative; */
+
+  &--rent {
+    width: 45%;
+  }
+
+  &--about {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
 
   &__title {
     width: 100%;
@@ -13,6 +23,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px;
+    cursor: pointer;
   }
 
   &__content {

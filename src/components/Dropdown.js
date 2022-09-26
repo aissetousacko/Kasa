@@ -2,11 +2,11 @@ import React, { useState } from 'react'
 import arrowDown from '../assets/arrow-down.png'
 import arrowUp from '../assets/arrow-up.png'
 
-const Dropdown = ({ title, content }) => {
+const Dropdown = ({ title, content, className }) => {
   const [buttonState, setButtonState] = useState(false)
 
   return (
-    <div className="dropdown">
+    <div className={className ? 'dropdown ' + className : 'dropdown'}>
       <button
         className="dropdown__title"
         onClick={() => setButtonState(!buttonState)}

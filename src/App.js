@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import About from './pages/About'
-import Error from './pages/Error'
+import Error404 from './pages/Error404'
 import Home from './pages/Home'
 import Rent from './pages/Rent'
 import Header from './components/Header'
@@ -27,7 +27,7 @@ const App = () => {
         <Route path="/" element={<Home data={data} />} />
         <Route path="/rent/:id" element={<Rent data={data} />} />
         <Route path="/about" element={<About />} />
-        <Route path="*" element={<Error />} />
+        <Route path="*" element={<Error404 />} />
       </Routes>
       <Footer />
     </BrowserRouter>

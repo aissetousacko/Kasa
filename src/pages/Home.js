@@ -1,5 +1,6 @@
 import React /* , { useEffect, useState } */ from 'react'
 import Banner from '../components/Banner'
+import BannerImage from '../assets/banner.png'
 import Card from '../components/Card'
 
 const Home = ({ data }) => {
@@ -18,7 +19,7 @@ const Home = ({ data }) => {
 
   return (
     <div>
-      <Banner />
+      <Banner image={BannerImage} text={true} />
       <ul className="gallery">
         {data.map((rent) => (
           <Card

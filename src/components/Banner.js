@@ -1,11 +1,12 @@
 import React from 'react'
-import BannerImage from '../assets/banner.png'
 
-const Banner = () => {
+const Banner = ({ image, text }) => {
   return (
     <div className="banner">
-      <img src={BannerImage} alt="Bannière" />
-      <div className="banner__text">Chez vous, partout et ailleurs</div>
+      <img src={image} alt="Bannière" />
+      {text && (
+        <div className="banner__text">Chez vous, partout et ailleurs</div>
+      )}
     </div>
   )
 }

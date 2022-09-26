@@ -39,8 +39,16 @@ const Rent = ({ data }) => {
       </div>
 
       <div className="rental__description">
-        <Dropdown title="Description" content={accomodation.description} />
-        <Dropdown title="Équipements" content={accomodation.equipments} />
+        <Dropdown
+          title="Description"
+          content={accomodation.description}
+          className="dropdown--rent"
+        />
+        <Dropdown
+          title="Équipements"
+          content={accomodation.equipments}
+          className="dropdown--rent"
+        />
       </div>
     </div>
   )

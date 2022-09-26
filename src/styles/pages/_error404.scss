@@ -1,0 +1,22 @@
+.error {
+  color: $color-primary;
+  text-align: center;
+
+  h1 {
+    font-size: 288px;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 36px;
+    margin-bottom: 147px;
+  }
+
+  &__redirection {
+    font-size: 18px;
+
+    &:visited {
+      color: $color-primary;
+    }
+  }
+}

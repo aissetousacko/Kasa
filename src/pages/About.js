@@ -1,49 +1,34 @@
 import React from 'react'
+import Banner from '../components/Banner'
+import BannerAboutImage from '../assets/banner-about.png'
+import Dropdown from '../components/Dropdown'
 
 const About = () => {
   return (
     <div>
-      <h1>A propos</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio expedita
-        voluptas aspernatur? Earum nemo eveniet consectetur odio debitis?
-        Voluptates voluptatibus corrupti cumque ex vel magnam neque deserunt
-        reprehenderit, repudiandae quod exercitationem tempora? Assumenda,
-        perferendis culpa, ex fugiat vitae vel modi dolorum eveniet voluptatibus
-        sequi saepe nulla ipsam earum debitis! Excepturi voluptatibus dolore
-        labore perferendis suscipit aspernatur impedit delectus, facere
-        officiis? Inventore eius reprehenderit et delectus ex deleniti, enim
-        fugit ducimus tempora quaerat dolores quos libero dolor labore numquam
-        similique exercitationem pariatur corporis mollitia odit! Nostrum sint
-        tenetur ipsa maiores sit fuga, quaerat laboriosam, magni doloremque
-        consequuntur porro. Dignissimos nesciunt molestiae aperiam pariatur
-        corrupti rem vel sed iusto facere reprehenderit tenetur in
-        necessitatibus accusantium, officia, deleniti architecto quis
-        consequatur nemo aut. Necessitatibus, deleniti. Quibusdam dolor,
-        expedita totam incidunt doloribus nemo voluptate, ut libero eius illum
-        consequuntur quia unde laboriosam, officia illo labore praesentium ab!
-        Suscipit laborum asperiores aliquid expedita. Assumenda, ab. Provident
-        explicabo illum omnis vel in ipsa, ab voluptas iusto, adipisci nihil
-        perferendis, cupiditate molestias! Eligendi soluta aut ex doloribus
-        mollitia nobis id, delectus voluptatem rem at. Labore voluptates quos
-        perspiciatis quisquam delectus excepturi cumque sunt omnis animi beatae!
-        Harum, reiciendis provident! Fuga odit maxime, omnis voluptas culpa
-        reprehenderit obcaecati.
-      </p>
-      <br />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis a repellat
-        exercitationem ad, aperiam voluptatem aliquid numquam minus hic.
-        Quisquam sit dolorum ut vel non sed corrupti eos itaque architecto
-        maiores omnis, culpa, debitis fugiat nemo. Vel maxime necessitatibus
-        inventore quo dolores, magnam voluptatem libero molestiae quia. Optio
-        illum error qui iste, dicta hic ipsam, animi sequi officia earum
-        consequatur aliquid facilis sit! Quisquam, repudiandae libero.
-        Consectetur porro saepe deserunt ut, eveniet neque repudiandae eum
-        aliquam eligendi iusto temporibus minima fuga dolor quis voluptas. Rem
-        nulla autem debitis vel recusandae? Quia ad accusantium consequuntur
-        voluptatum exercitationem at, architecto asperiores tempora?
-      </p>
+      <Banner image={BannerAboutImage} text={false} />
+      <div className="about">
+        <Dropdown
+          title="Fiabilité"
+          content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."
+          className="dropdown--about"
+        />
+        <Dropdown
+          title="Respect"
+          content="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."
+          className="dropdown--about"
+        />
+        <Dropdown
+          title="Service"
+          content="Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question."
+          className="dropdown--about"
+        />
+        <Dropdown
+          title="Sécurité"
+          content="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
+          className="dropdown--about"
+        />
+      </div>
     </div>
   )
 }
