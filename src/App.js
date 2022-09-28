@@ -19,12 +19,16 @@ const App = () => {
     })
       .then((response) => response.json())
       .then((data) => setData(data))
-  }, [])
+      .catch(function (error) {
+        console.log(error, ' error')
+      })
+  }, [setData])
+
   return (
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/" element={<Home data={data} />} />
+        <Route exact path="/" element={<Home data={data} />} />
         <Route path="/rent/:id" element={<Rent data={data} />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<Error404 />} />

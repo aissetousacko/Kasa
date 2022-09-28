@@ -12,7 +12,7 @@ const Rent = ({ data }) => {
   const accomodation = data.find((item) => item.id === rentId.id)
   // console.log(accomodation)
 
-  if (!accomodation) {
+  if (accomodation === undefined || accomodation === null) {
     return <Error404 />
   }
 
